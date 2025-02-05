@@ -1608,7 +1608,7 @@ classdef Sequence < handle
             for j=1:shape_channels
                 if any(diff(wave_data{j}(1,1:wave_cnt(j)))<=0.0) %&& ... % quick pre-check whether the time vector is monotonously increasing to avoid too often unique() calls 
                     %wave_cnt(j)~=length(unique(wave_data{j}(1,1:wave_cnt(j))))
-                    warning('Warning: not all elements of the generated time vector are unique and sorted in accending order!\n');
+                    warning('Warning: not all elements of the generated time vector are unique and sorted in ascending order!\n');
                 end
             end
 
